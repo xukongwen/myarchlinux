@@ -12,3 +12,14 @@ Server = http://mirrors.aliyun.com/archlinux/$repo/os/$arch
 SigLevel = Optional TrustAll
 # 清华大学
 Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
+
+
+
+
+
+# AUR
+
+sudo pacman -S base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
